@@ -5,6 +5,23 @@ body{
 	max-width:    600px;
 }
 
-p{
+h1{
+
+	font-size: 
+
+}
+.section h2{
+	font-size: 2em;
+}
+.section p{
 	margin:10px;
+}
+
+#nav li{
+	display: inline;
+	list-style-type: none;	
+}
+
+#nav li a{
+	text-decoration: none;
 }
