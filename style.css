@@ -2,6 +2,7 @@ body{
 	font-family:  Arial;
 	text-align:   left;
 	max-width: 600px;
+	min-width: 300px;
 }
 
 h1{
@@ -21,6 +22,7 @@ h1{
 }
 .section p{
 	margin:10px;
+	min-width: inherit;
 	max-width:    inherit;
 }
 
