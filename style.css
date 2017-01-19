@@ -6,12 +6,17 @@ body{
 }
 
 h1{
-
 	font-size: 3em; 
-
 }
+
+.sectionClose{
+	height: 100px;
+}
+
 .section h2{
+
 	font-size: 2em;
+
 }
 .section p{
 	margin:10px;
