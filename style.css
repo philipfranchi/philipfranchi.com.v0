@@ -1,0 +1,10 @@
+body{
+	font-family:  Arial;
+	text-align:   left;
+	min-width:    300px;
+	max-width:    600px;
+}
+
+p{
+	margin:10px;
+}
