@@ -1,8 +1,7 @@
 body{
 	font-family:  Arial;
 	text-align:   left;
-	min-width:    300px;
-	max-width:    600px;
+	max-width: 600px;
 }
 
 h1{
@@ -10,6 +9,8 @@ h1{
 }
 
 .section{
+
+
 	margin-bottom: 100px;
 }
 
@@ -20,6 +21,7 @@ h1{
 }
 .section p{
 	margin:10px;
+	max-width:    inherit;
 }
 
 #nav li{
