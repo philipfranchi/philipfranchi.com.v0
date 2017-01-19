@@ -9,8 +9,8 @@ h1{
 	font-size: 3em; 
 }
 
-.sectionClose{
-	height: 100px;
+.section{
+	margin-bottom: 100px;
 }
 
 .section h2{
