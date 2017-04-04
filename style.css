@@ -1,67 +1,85 @@
-/*body{
-	font-family:  Arial;
-	text-align:   left;
-	max-width: 600px;
-	min-width: 300px;
-}
-
-h1{
-	font-size: 3em; 
-}
-
-.section{
-
-
-	margin-bottom: 100px;
-}
-
-.section h2{
-
-	font-size: 2em;
-
-}
-.section p{
-	margin:10px;
-	min-width: inherit;
-	max-width:    inherit;
-}
-
-#nav li{
-	display: inline;
-	list-style-type: none;	
-}
-
-#nav li a{
-	text-decoration: none;
-}*/
-
 body{
-	margin:1em auto;
-	max-width:40em;
-	padding:0 .62em;
-	font:1.2em/1.62em sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.dead-center{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    background-color: #4be58f;
 }
 
-h1,h2,h3{
-	line-height:1.2em;
+.center-content{
+    background-color: #FFFFF0;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 90%;
+}
+.center-content h1{
+    font-size: 4em;
+}
+.center-content h2{
+    font-size: 2em;
 }
 
-#nav{
-	font:1.2em/1.62em sans-serif;
+.links{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    font-size: 3em;
+    padding: 0px;
 }
 
-#nav li{
-	display: inline;
-	list-style-type: none;	
+.links li a, .links li a:visited{
+    text-decoration: none;
+    color: #ba723b;
 }
 
-#nav li a{
-	text-decoration: none;
+@media (min-width: 768px){
+    .center-content{
+        width: 60%;
+    }
+    .center-content h1{
+        font-size: 5em;
+        margin-bottom: 0px;
+    }
+    .center-content h2{
+        font-size: 2.5em;
+    }
+    .links{
+        text-align: center;
+        width: 50%;
+        padding: 0 0 10px 0;
+    }
 }
 
-@media print{
-	body{
-		max-width:none
-		
-	}
+@-webkit-keyframes shake {
+    0%, 20%, 100% {-webkit-transform: translateX(0);}
+    2%, 6%, 10%, 14%, 18% {-webkit-transform: translateX(-5px);}
+    4%, 8%, 12%, 16% {-webkit-transform: translateX(5px);}
+}
+@-moz-keyframes shake {
+    0%, 20%, 100% {-moz-transform: translateX(0);}
+    2%, 6%, 10%, 14%, 18% {-moz-transform: translateX(-5px);}
+    4%, 8%, 12%, 16% {-moz-transform: translateX(5px);}
+}
+@-o-keyframes shake {
+    0%, 20%, 100% {-o-transform: translateX(0);}
+    2%, 6%, 10%, 14%, 18% {-o-transform: translateX(-5px);}
+    4%, 8%, 12%, 16% {-o-transform: translateX(5px);}
+}
+@keyframes shake {
+    0%, 20%, 100% {transform: translateX(0);}
+    2%, 6%, 10%, 14%, 18% {transform: translateX(-5px);}
+    4%, 8%, 12%, 16% {transform: translateX(5px);}
+}
+.shake {
+    animation: shake 5s 0s infinite;
 }
