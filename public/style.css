@@ -11,14 +11,19 @@ body{
     width:100%;
     background-color: #4be58f;
 }
-
+.center-content-border{
+    padding: 2em 3em;
+    border-radius: 20px;
+    background-color: #ba723b;
+    width: 90%;
+}
 .center-content{
     background-color: #FFFFF0;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 30px;
     font-family: sans-serif;
     text-align: center;
-    width: 90%;
+    
 }
 .center-content h1{
     font-size: 4em;
@@ -43,7 +48,7 @@ body{
 }
 
 @media (min-width: 768px){
-    .center-content{
+    .center-content-border{
         width: 60%;
     }
     .center-content h1{
