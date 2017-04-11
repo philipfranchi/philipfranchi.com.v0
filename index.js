@@ -1,22 +1,19 @@
 let express = require('express'),
     app = express(),
-    fs = require('fs')
+    fs = require('fs'),
+    bodyParser = require('body-parser')
 
+//Routes and Middleware
+app.use(express.static(__dirname + '/app/resources'));
 
-//Use the dist folder to serve public static files
-app.use(express.static('./public'));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
 
-/*
-//setup routes
-app.use(require('./controllers/index.js'))
+//parse application/json
+app.use(bodyParser.json())
 
-app.get('/', function (req, res) {
-  res.sendFile('assets/index.html');
-})
-*/
-app.get('/resume', (req, res) =>{
-    res.sendFile(__dirname +'/public/resume_franchipereira.pdf')
-})
+app.use('/', require('./app/controllers'));
+
 
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')

@@ -11,22 +11,26 @@ body{
     width:100%;
     background-color: #4be58f;
 }
+
 .center-content-border{
-    padding: 2em 3em;
     border-radius: 20px;
     background-color: #ba723b;
+    padding: .5em .5em;
+    margin-top: .5em;
+    box-shadow: 1px 1px 5px #888;
     width: 90%;
 }
+
 .center-content{
     background-color: #FFFFF0;
     padding: 20px;
     border-radius: 30px;
     font-family: sans-serif;
     text-align: center;
-    
+    border: 5px solid black;
 }
 .center-content h1{
-    font-size: 4em;
+    font-size: 3em;
 }
 .center-content h2{
     font-size: 2em;
@@ -36,9 +40,9 @@ body{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
-    font-size: 3em;
+    font-size: 2em;
     padding: 0px;
 }
 
@@ -48,21 +52,15 @@ body{
 }
 
 @media (min-width: 768px){
-    .center-content-border{
-        width: 60%;
+.center-content-border{
+    padding: 2em 3em;
+    box-shadow: 10px 10px 5px #888888;
+    overflow-y: auto;
+}
+    .links li a, .links li a:visited{
+        font-size: 1.5em;
     }
-    .center-content h1{
-        font-size: 5em;
-        margin-bottom: 0px;
-    }
-    .center-content h2{
-        font-size: 2.5em;
-    }
-    .links{
-        text-align: center;
-        width: 50%;
-        padding: 0 0 10px 0;
-    }
+
 }
 
 @-webkit-keyframes shake {

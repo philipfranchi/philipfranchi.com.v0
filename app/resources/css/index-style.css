@@ -1,0 +1,17 @@
+@media (min-width: 768px){
+    .center-content-border{
+        width: 60%;
+    }
+    .center-content h1{
+        font-size: 5em;
+        margin-bottom: 0px;
+    }
+    .center-content h2{
+        font-size: 2.5em;
+    }
+    .links{
+        text-align: center;
+        width: 50%;
+        padding: 0 0 10px 0;
+    }
+}

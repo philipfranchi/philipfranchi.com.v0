@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/philipfranchi/philipfranchi.com#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0",
+    "mysql2": "^1.2.0",
+    "sequelize": "^3.30.4"
   }
 }
-
