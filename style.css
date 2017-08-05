@@ -1,0 +1,127 @@
+body{
+    overflow: hidden;
+}
+
+#canvas{
+    background-color: white;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*width: 500px;*/
+    /*height: 500px;*/
+}
+
+/*Colors*/
+.primary-color{
+   color:  #008CBA; 
+}
+.primary-color-line{
+    color:  #008CBA;
+    border-color:  #008CBA;
+    background-color:  #008CBA;
+}
+.primary-color-border{
+    border-color: #008CBA;
+}
+
+.center {
+    line-height: 100vh;        
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    display: inline-block;
+    line-height: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 0px 10px;
+    font-family: sans-serif;
+    background-color: white;
+
+}
+
+.main-title{
+    text-align: center;
+    font-size: 3em;
+}
+
+.description{
+    line-height: normal;
+    font-size: 1.2em;
+     margin-bottom: 20px;
+}
+
+.line{
+    margin: 0px;  
+}
+
+.nav{
+    list-style-type: none; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 20px;;
+    font-size: 2em;
+}
+
+.nav li{
+    margin: 5px 0px;
+    width: 100%;
+    text-align: center;
+
+}
+.nav li .btn{
+    font-size: 16px;
+    width: 80%;
+    background-color: white; 
+    cursor: pointer;
+}
+
+.btn{
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  width: 80%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 2;
+}
+
+a.btn:visited{
+  color: black;
+}
+
+@media(min-width: 860px){
+    .main{
+        vertical-align: middle;
+        box-shadow: 0px 10px 5px #DDDDDD;
+    }
+    .main-title{
+        font-size: 6vw;
+    }
+    .description{
+        font-size: 2vw;
+        margin-bottom: 30px;
+    }
+    
+    .nav{
+        justify-content:space-around;
+        flex-direction: row; 
+        margin-top: 30px; 
+    }
+
+    .nav li .btn{
+        border-width: 3px;
+        border-style: solid;
+        font-size: 24px;
+    }
+}
